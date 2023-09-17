@@ -1,0 +1,129 @@
+:root {
+    --main-color: #bae8e8;
+    --secondary-color: #272643;
+    --aside-color: #E3F6F5;
+    --container-width: 70vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    transition: .3s ease;
+}
+
+/* header */
+
+.header {
+    height: 8vh;
+    padding-inline: 10vw;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    background: var(--secondary-color);
+}
+
+.header-logo {
+    aspect-ratio: 1 / 1;
+    height: 50px;
+}
+
+.header-heading {
+    color: white;
+}
+
+.header-heading-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* main */
+
+.main {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: var(--main-color);
+}
+
+/* aside */
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    background: var(--aside-color);
+    padding-top: 50px;
+}
+
+.aside-link-list {
+    list-style: none;
+}
+
+.aside-link-list-item {
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+.aside-list-item-link {
+    padding-left: 100px;
+    padding-right: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.aside-link-list-item:hover {
+    transform: translateX(-5px);
+}
+
+.aside-link-list-item:hover .aside-list-item-link {
+    background: var(--secondary-color);
+    color: var(--main-color);
+}
+
+/* article */
+
+.article {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.article-image:hover {
+    scale: 1.05;
+}
+
+/* footer */
+
+.footer {
+    height: 22vh;
+    padding-inline: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--secondary-color);
+    color: white;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-list-item {
+    margin-bottom: 20px;
+}
+
+.footer-inner-list {
+    list-style: none;
+    padding-left: 25px;
+}
+
+.footer-inner-list-item {
+    margin-bottom: 5px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
